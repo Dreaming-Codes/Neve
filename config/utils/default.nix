@@ -1,9 +1,4 @@
-{
-  lib,
-  config,
-  ...
-}:
-{
+{ lib, config, ... }: {
   imports = [
     ./better-escape.nix
     ./cloak.nix
@@ -28,11 +23,10 @@
     ./wakatime.nix
     ./which-key.nix
     ./wilder.nix
+    ./flutter.nix
   ];
 
-  options = {
-    utils.enable = lib.mkEnableOption "Enable utils module";
-  };
+  options = { utils.enable = lib.mkEnableOption "Enable utils module"; };
   config = lib.mkIf config.utils.enable {
     better-escape.enable = lib.mkDefault true;
     cloak.enable = lib.mkDefault true;
@@ -57,5 +51,6 @@
     wakatime.enable = lib.mkDefault false;
     which-key.enable = lib.mkDefault true;
     wilder.enable = lib.mkDefault true;
+    flutter.enable = lib.mkDefault true;
   };
 }
