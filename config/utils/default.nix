@@ -29,7 +29,7 @@
   options = { utils.enable = lib.mkEnableOption "Enable utils module"; };
   config = lib.mkIf config.utils.enable {
     better-escape.enable = lib.mkDefault true;
-    cloak.enable = lib.mkDefault true;
+    cloak.enable = lib.mkDefault false;
     harpoon.enable = lib.mkDefault true;
     markdown-preview.enable = lib.mkDefault true;
     mini.enable = lib.mkDefault true;
