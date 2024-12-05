@@ -39,6 +39,7 @@
           find_files = {
             #   theme = "ivy";
             hidden = true;
+            ignored = false;
           };
         };
       };
