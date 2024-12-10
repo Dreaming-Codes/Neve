@@ -24,6 +24,7 @@
     ./which-key.nix
     ./wilder.nix
     ./flutter.nix
+    ./multicursor.nix
   ];
 
   options = { utils.enable = lib.mkEnableOption "Enable utils module"; };
@@ -52,5 +53,6 @@
     which-key.enable = lib.mkDefault true;
     wilder.enable = lib.mkDefault true;
     flutter.enable = lib.mkDefault true;
+    multicursor.enable = lib.mkDefault true;
   };
 }
