@@ -35,7 +35,7 @@
     markdown-preview.enable = lib.mkDefault true;
     mini.enable = lib.mkDefault true;
     neocord.enable = lib.mkDefault true;
-    neotest.enable = lib.mkDefault false;
+    neotest.enable = lib.mkDefault true;
     nvim-autopairs.enable = lib.mkDefault true;
     nvim-colorizer.enable = lib.mkDefault true;
     nvim-surround.enable = lib.mkDefault true;
